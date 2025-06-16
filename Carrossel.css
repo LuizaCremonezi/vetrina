@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f5;
+  font-family: sans-serif;
+}
+
+/* NAVBAR (ajustes mínimos caso precise) */
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.header-inner-content {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* CARROSSEL */
+.carrossel {
+  position: relative;
+  width: 100vw;
+  height: 650px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+  will-change: transform;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bolinhas {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.bolinhas span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 8px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.bolinhas .ativa {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Produtos / Geral */
+.gray-background {
+  background-color: #eee;
+  padding: 20px 0;
+}
+
+.page-inner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cols-3 img,
+.cols-4 .product img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.cols-4 {
+  justify-content: space-between;
+}
+
+.product {
+  flex: 1 1 calc(25% - 20px);
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-name {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.rate {
+  color: orange;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.product-price span {
+  font-size: 14px;
+  color: #999;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subtitle-underline {
+  width: 60px;
+  height: 4px;
+  background: black;
+  margin-bottom: 20px;
+}
+
+/* Exclusivo */
+.exclusive-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.header-bottom-side-left {
+  max-width: 50%;
+}
+
+.header-bottom-side-left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.header-bottom-side-left p {
+  margin-bottom: 20px;
+}
+
+.header-bottom-side-left button {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-bottom-side-right img {
+  width: 300px;
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
